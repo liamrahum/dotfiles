@@ -209,25 +209,34 @@ gaps outer 3
 # shut down, restart and locking features
 bindsym $mod+Delete exec clearine
 
-bindcode 133 --release exec "rofi -show drun"
-bindsym $mod+space exec rofi -show
+#bindcode 133 --release exec "rofi -show drun"
+bindsym $mod+space exec rofi -show drun
 bindsym $mod+Tab exec rofi -show window
+bindsym $mod+Shift+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
-bindsym $mod+Shift+s exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+#bindsym $mod+Shift+s exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+
+
+bindsym $mod+Shift+f exec nemo
 
 # autostarted applications
+
+#keyboard_layout
+exec "setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_shift_toggle"
+
+exec greenclip daemon
 exec xrandr --output DP-4 --mode 2560x1080 --rate 144
 exec_always --no-startup-id autotiling
 #exec_always --no-startup-id wal -R -n
-exec --no-startup-id polybar
+exec polybar
 #exec --no-startup-id ~/.fehbg
-exec --no-startup-id feh --bg-fill ~/Documents/Wallpapers/wallpaper8.png
-exec --no-startup-id picom --experimental-backend
+exec feh --bg-fill ~/Documents/Wallpapers/wallpaper8.png
+exec picom --experimental-backend
 #exec_always --no-startup-id xset dpms 500
 #exec_always --no-startup-id dunst
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id mpd
 #exec --no-startup-id xfce4-power-manager
-exec --no-startup-id onedrivegui --minimized
-exec "setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_shift_toggle"
+#exec onedrivegui --minimized
+exec --no-startup-id dex --autostart --environment i3
 
