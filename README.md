@@ -16,6 +16,11 @@
 * Autotile applications - autotiling
 * Notifications - dunst
 * (Optional) File explorer - nemo
-Install with yay (Arch Linux):
+
+Install with yay (Arch-based Linux):
 
 ```yay -S i3 kitty feh clearine picom-jonaburg-git maim xclip xdotool dex autotiling dunst```
+
+Install on other distros:
+
+ * [Install Arch](https://archlinux.org/download/) ;)
