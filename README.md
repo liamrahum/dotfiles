@@ -16,6 +16,7 @@
 * Autotile applications - autotiling
 * Notifications - dunst
 * (Optional) File explorer - nemo
+* (Optional) [Oh my posh](https://ohmyposh.dev/)
 
 Install with yay (Arch-based distros):
 
