@@ -17,7 +17,7 @@
 * Notifications - dunst
 * (Optional) File explorer - nemo
 
-Install with yay (Arch-based Linux):
+Install with yay (Arch-based distros):
 
 ```yay -S i3 kitty feh clearine picom-jonaburg-git maim xclip xdotool dex autotiling dunst```
 
