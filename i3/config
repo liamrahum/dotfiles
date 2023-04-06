@@ -216,7 +216,7 @@ bindsym $mod+Tab exec rofi -show window
 bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # Built in screenshot tool
-#bindsym $mod+Shift+s exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+bindsym $mod+Shift+s exec --no-startup-id spectacle -c -r -b
 
 
 bindsym $mod+Shift+f exec nemo
@@ -233,4 +233,4 @@ exec polybar
 exec feh --bg-fill ~/Documents/Wallpapers/wallpaper6.jpg
 exec picom --experimental-backend
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id xset dpms 500
+#exec --no-startup-id xset dpms 500
