@@ -1,6 +1,6 @@
 <h1 align="center">⚪ My i3wm dotfiles ⚪</h1>
 
-![image](https://user-images.githubusercontent.com/45101400/229283154-3d4702f8-1893-428a-b1a9-64bc5b71cd73.png)
+![image](https://user-images.githubusercontent.com/45101400/230563903-331ce938-f7be-42cc-8d25-716cb0a4edb2.png)
 
 ## Requirements
 * i3wm
