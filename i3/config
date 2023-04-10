@@ -219,7 +219,7 @@ bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-
 bindsym $mod+Shift+s exec --no-startup-id spectacle -c -r -b
 
 
-bindsym $mod+Shift+f exec nemo
+bindsym $mod+Shift+f exec dolphin
 
 # autostarted applications
 
