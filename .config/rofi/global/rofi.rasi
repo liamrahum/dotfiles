@@ -11,7 +11,7 @@ configuration {
 }
 
 * {
-    transparent: #26233A00;
+    transparent: #00000000;
     foreground: #F2F2F2EE;
     background-selected: #F2F2F245;
     background-active: #F2F2F230;
@@ -23,7 +23,7 @@ configuration {
 
 window {
     transparency: "real";
-    background-color: #1917248D;
+    background-color: #1917244D;
     text-color: #6e6a86;
     location: west;
     anchor: west;
@@ -129,7 +129,7 @@ element-text {
     expand: true;
     horizontal-align: 0;
     vertical-align: 0.5;
-    color: #F0F0F0;
+    color: #6e6a86;
     background-color: transparent;
 }
 
