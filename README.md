@@ -7,4 +7,4 @@ To install yay:
 
 Used packages:
 
-```yay -S nvidia-open-dkms hyprland-nvidia-git neofetch polkit-gnome ffmpeg neovim viewnior dunst rofi pavucontrol starship wl-clipboard wf-recorder swaybg grimblast-git ffmpegthumbnailer tumbler playerctl noise-suppression-for-voice kitty waybar-hyprland wlogout swaylock-effects sddm-git nwg-look-bin nordic-theme papirus-icon-theme tela-icon-theme pamixer```
+```yay -S nvidia-open-dkms hyprland-git neofetch polkit-gnome ffmpeg neovim viewnior dunst rofi pavucontrol starship wl-clipboard wf-recorder swaybg grimblast-git ffmpegthumbnailer tumbler playerctl noise-suppression-for-voice kitty waybar-hyprland wlogout swaylock-effects sddm-git nwg-look-bin nordic-theme papirus-icon-theme tela-icon-theme pamixer```
