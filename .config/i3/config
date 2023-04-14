@@ -218,6 +218,7 @@ bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-
 # Built in screenshot tool
 bindsym $mod+Shift+s exec --no-startup-id spectacle -c -r -b
 
+bindsym $mod+b exec brave
 
 bindsym $mod+Shift+f exec dolphin
 # autostarted applications
@@ -230,6 +231,6 @@ exec xrandr --output DP-4 --mode 2560x1080 --rate 143.93
 exec_always killall autotiling && autotiling
 exec polybar
 exec feh --bg-fill ~/repos/dotfiles/wallpapers/wallpaper6.jpg
-exec_always killall picom && picom --experimental-backend
+exec_always picom --experimental-backend
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id xset dpms 500
