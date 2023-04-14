@@ -230,6 +230,6 @@ exec xrandr --output DP-4 --mode 2560x1080 --rate 143.93
 exec_always killall autotiling && autotiling
 exec polybar
 exec feh --bg-fill ~/repos/dotfiles/wallpapers/wallpaper6.jpg
-exec_always killall picom && picom --experimental-backend --vsync
+exec_always killall picom && picom --experimental-backend
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id xset dpms 500
