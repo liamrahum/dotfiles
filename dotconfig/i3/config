@@ -97,9 +97,8 @@ bindsym $mod+Shift+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+s layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -218,7 +217,7 @@ bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-
 # Built in screenshot tool
 bindsym $mod+Shift+s exec --no-startup-id spectacle -c -r -b
 
-bindsym $mod+b exec brave
+bindsym $mod+b exec firefox
 
 bindsym $mod+Shift+f exec dolphin
 # autostarted applications
@@ -230,7 +229,7 @@ exec greenclip daemon
 exec xrandr --output DP-4 --mode 2560x1080 --rate 143.93
 exec_always killall autotiling && autotiling
 exec polybar
-exec feh --bg-fill ~/repos/dotfiles/wallpapers/wallpaper6.jpg
+exec feh --bg-fill ~/repos/wallpapers/colorful/fire-colors.jpg
 exec_always picom --experimental-backend
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id xset dpms 500
