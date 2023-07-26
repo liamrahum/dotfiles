@@ -149,7 +149,7 @@ bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-
 # Built in screenshot tool
 bindsym $mod+Shift+s exec --no-startup-id spectacle -c -r -b
 
-bindsym $mod+b exec firefox
+bindsym $mod+b exec brave
 
 bindsym $mod+Shift+f exec dolphin
 # autostarted applications
