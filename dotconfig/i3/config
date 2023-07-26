@@ -139,7 +139,7 @@ gaps outer 3
 #gaps top 45
 
 # shut down, restart and locking features
-bindsym $mod+Delete exec clearine
+bindsym $mod+Shift+p exec clearine
 
 # App launcher, tab switcher, clipboard
 bindsym $mod+space exec rofi -show drun
