@@ -159,9 +159,9 @@ exec_always "setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_sh
 
 exec greenclip daemon
 exec xrandr --output DP-4 --mode 2560x1080 --rate 144
-exec_always killall autotiling && autotiling
+exec_always --no-startup-id autotiling
 exec polybar
 exec feh --bg-fill ~/repos/wallpapers/colorful/red-pattern.jpg
-# exec_always picom --experimental-backend
+#exec_always picom --experimental-backend
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id xset dpms 500
