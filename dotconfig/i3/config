@@ -151,7 +151,7 @@ bindsym $mod+Shift+s exec --no-startup-id spectacle -c -r -b
 
 bindsym $mod+b exec brave
 
-bindsym $mod+Shift+f exec dolphin
+bindsym $mod+Shift+f exec pcmanfm
 # autostarted applications
 
 #keyboard_layout
