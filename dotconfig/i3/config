@@ -147,7 +147,7 @@ bindsym $mod+Tab exec rofi -show window
 bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # Built in screenshot tool
-bindsym $mod+Shift+s exec --no-startup-id spectacle -c -r -b
+bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 
 bindsym $mod+b exec brave
 
@@ -157,11 +157,12 @@ bindsym $mod+Shift+f exec pcmanfm
 #keyboard_layout
 exec_always "setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_shift_toggle"
 
+exec obs --startreplaybuffer
 exec greenclip daemon
 exec xrandr --output DP-4 --mode 2560x1080 --rate 144
 exec_always --no-startup-id autotiling
 exec polybar
 exec feh --bg-fill ~/repos/wallpapers/colorful/red-pattern.jpg
 #exec_always picom --experimental-backend
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec /usr/lib/polkit-kde-authentication-agent-1
 #exec --no-startup-id xset dpms 500
