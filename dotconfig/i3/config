@@ -20,6 +20,9 @@ tiling_drag modifier titlebar
 
 bindsym $mod+Return exec kitty
 
+# Restart bar
+bindsym $mod+Shift+i exec ~/.config/polybar/i3_bar.sh
+
 bindsym $mod+Shift+q kill
 
 bindsym $mod+j focus left
@@ -148,14 +151,14 @@ bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-
 
 # Built in screenshot tool
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
-
 bindsym $mod+b exec brave
 
 bindsym $mod+Shift+f exec pcmanfm
-# autostarted applications
+
 
 #keyboard_layout
 exec_always "setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_shift_toggle"
+
 
 exec obs --startreplaybuffer
 exec greenclip daemon
