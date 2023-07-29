@@ -153,7 +153,7 @@ bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 bindsym $mod+b exec brave
 
-bindsym $mod+Shift+f exec pcmanfm
+bindsym $mod+Shift+f exec dolphin
 
 
 #keyboard_layout
