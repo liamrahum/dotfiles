@@ -159,8 +159,11 @@ bindsym $mod+Shift+f exec dolphin
 #keyboard_layout
 exec_always "setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_shift_toggle"
 
-
+# Autostart apps
 exec obs --startreplaybuffer
+exec onedrivegui
+
+# Autostat utils
 exec greenclip daemon
 exec xrandr --output DP-4 --mode 2560x1080 --rate 144
 exec_always --no-startup-id autotiling
