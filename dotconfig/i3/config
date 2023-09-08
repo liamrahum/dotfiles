@@ -150,7 +150,7 @@ bindsym $mod+Tab exec rofi -show window
 bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # Built in screenshot tool
-#bindsym $mod+Shift+s exec --no-startup-id flameshot gui
+bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 bindsym $mod+b exec brave
 
 bindsym $mod+Shift+f exec dolphin
@@ -160,7 +160,7 @@ bindsym $mod+Shift+f exec dolphin
 exec_always "setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_shift_toggle"
 
 # Autostart apps
-exec obs --startreplaybuffer
+#exec obs --startreplaybuffer
 exec onedrivegui
 
 # Autostat utils
