@@ -107,7 +107,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+#bindsym $mod+Shift+r reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -151,6 +151,9 @@ bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-
 
 # Built in screenshot tool
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
+#color picker
+bindsym $mod+Shift+c exec xcolor -P 150 -s
+
 bindsym $mod+b exec brave
 
 bindsym $mod+Shift+f exec dolphin
@@ -164,11 +167,11 @@ exec_always "setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_sh
 exec onedrivegui
 
 # Autostat utils
-exec greenclip daemon
+exec greenclip daemo
 exec xrandr --output DP-4 --mode 2560x1080 --rate 144
 exec_always --no-startup-id autotiling
 exec polybar
-exec feh --bg-fill ~/repos/wallpapers/colorful/red-pattern.jpg
+exec feh --bg-fill ~/repos/wallpapers/colorful/rev-4-8.png
 #exec_always picom --experimental-backend
 exec /usr/lib/polkit-kde-authentication-agent-1
 #exec --no-startup-id xset dpms 500
