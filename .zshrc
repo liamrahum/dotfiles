@@ -125,7 +125,7 @@ alias vim='nvim'
 
 #Display Pokemon
 #pokemon-colorscripts --no-title -r 1,3,6
-pokemon-colorscripts -n bonsly --no-title
+#pokemon-colorscripts -n bonsly --no-title
 
 #Display gif
 #kitten icat --align left ~/.config/neofetch/pochita.gif

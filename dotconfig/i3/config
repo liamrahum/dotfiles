@@ -167,7 +167,7 @@ exec_always "setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_sh
 exec onedrivegui
 
 # Autostat utils
-exec greenclip daemo
+exec greenclip daemon
 exec xrandr --output DP-4 --mode 2560x1080 --rate 144
 exec_always --no-startup-id autotiling
 exec polybar
