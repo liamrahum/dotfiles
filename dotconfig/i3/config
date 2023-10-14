@@ -170,8 +170,8 @@ exec onedrivegui
 exec greenclip daemon
 exec xrandr --output DP-4 --mode 2560x1080 --rate 144
 exec_always --no-startup-id autotiling
-exec polybar
-exec feh --bg-fill ~/repos/wallpapers/colorful/rev-4-8.png
-#exec_always picom --experimental-backend
+exec ~/.config/polybar/launch.sh
+exec feh --bg-fill ~/repos/wallpapers/nicola-samori.png
+exec_always picom
 exec /usr/lib/polkit-kde-authentication-agent-1
 #exec --no-startup-id xset dpms 500
