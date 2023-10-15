@@ -4,7 +4,7 @@ font pango:monospace 8
 font pango:Google Sans 10
 
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 exec --no-startup-id nm-applet
 
@@ -21,14 +21,9 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec kitty
 
 # Restart bar
-bindsym $mod+Shift+i exec ~/.config/polybar/i3_bar.sh
+bindsym $mod+Shift+i exec ~/.config/polybar/launch.sh
 
 bindsym $mod+Shift+q kill
-
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -149,6 +144,8 @@ bindsym $mod+space exec rofi -show drun
 bindsym $mod+Tab exec rofi -show window
 bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
+bindsym $mod+k exec pkill greenclip && greenclip clear && greenclip daemon
+
 # Built in screenshot tool
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 #color picker
@@ -172,6 +169,6 @@ exec xrandr --output DP-4 --mode 2560x1080 --rate 144
 exec_always --no-startup-id autotiling
 exec ~/.config/polybar/launch.sh
 exec feh --bg-fill ~/repos/wallpapers/nicola-samori.png
-exec_always picom
+#exec_always picom
 exec /usr/lib/polkit-kde-authentication-agent-1
 #exec --no-startup-id xset dpms 500
