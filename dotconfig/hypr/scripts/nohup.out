@@ -1,0 +1,27 @@
+xdg-desktop-portal-wlr: no process found
+
+(/usr/lib/xdg-desktop-portal:25781): xdg-desktop-portal-WARNING **: 18:32:12.516: No skeleton to export
+warning: queue 0x564093063020 destroyed while proxies still attached:
+  zwp_linux_dmabuf_feedback_v1@21 still attached
+  zwp_linux_dmabuf_v1@22 still attached
+2023/07/21 18:32:14 [ERROR] - xdg-desktop-portal-hyprland: unsupported wl_shm format 0x34324742
+
+** (/usr/lib/xdg-desktop-portal:25781): WARNING **: 18:32:14.414: Failed to close session implementation: GDBus.Error:org.freedesktop.DBus.Error.NoReply: Message recipient disconnected from message bus without replying
+
+(/usr/lib/xdg-desktop-portal:25781): xdg-desktop-portal-WARNING **: 18:32:14.414: A backend call failed: Message recipient disconnected from message bus without replying
+
+(/usr/lib/xdg-desktop-portal:25781): xdg-desktop-portal-WARNING **: 18:32:16.465: A backend call failed: Message recipient disconnected from message bus without replying
+
+** (/usr/lib/xdg-desktop-portal:25781): WARNING **: 18:32:41.489: Failed to close session implementation: Timeout was reached
+
+(/usr/lib/xdg-desktop-portal:25781): xdg-desktop-portal-WARNING **: 18:32:42.457: A backend call failed: Message recipient disconnected from message bus without replying
+
+** (/usr/lib/xdg-desktop-portal:25781): WARNING **: 18:33:07.479: Failed to close session implementation: Timeout was reached
+
+** (/usr/lib/xdg-desktop-portal:25781): WARNING **: 18:33:07.480: Failed to close session implementation: GDBus.Error:org.freedesktop.DBus.Error.UnknownObject: Unknown object '/org/freedesktop/portal/desktop/session/1_343/obs1'.
+
+(/usr/lib/xdg-desktop-portal:25781): xdg-desktop-portal-WARNING **: 18:45:44.639: A backend call failed: Message recipient disconnected from message bus without replying
+
+** (/usr/lib/xdg-desktop-portal:25781): WARNING **: 18:46:09.662: Failed to close session implementation: Timeout was reached
+
+(/usr/lib/xdg-desktop-portal:25781): xdg-desktop-portal-WARNING **: 18:46:12.516: A backend call failed: Message recipient disconnected from message bus without replying
