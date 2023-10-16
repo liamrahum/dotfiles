@@ -4,7 +4,7 @@
 
 ## Set GTK Themes, Icons, Cursor and Fonts
 
-THEME='Manhattan'
+THEME='Graphite-Mono'
 ICONS='Luv-Folders-Dark'
 FONT='Noto Sans 9'
 CURSOR='Qogirr-dark'
