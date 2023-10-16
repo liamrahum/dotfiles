@@ -8,12 +8,12 @@
 }
 
 window#waybar {
-  background: rgba(17, 17, 27, 0.05);
+  background: #21201e;
 }
 
 tooltip {
   background: #1e1e2e;
-  color: #cdd6f4;
+  color: #f1f1f1;
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
@@ -68,8 +68,8 @@ tooltip {
 #custom-mode,
 #custom-resetclipboard,
 #tray {
-  color: #cdd6f4;
-  background: #050216;
+  color: #f1f1f1;
+  background: #21201e;
   opacity: 1;
   padding: 0px;
   margin: 6px 0px 6px 0px;
