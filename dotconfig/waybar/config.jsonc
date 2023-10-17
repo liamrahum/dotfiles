@@ -9,6 +9,7 @@
   "gtk-layer-shell": true,
   //"modules-left": ["cpu"],
   "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
   "modules-right": [
     "custom/resetclipboard",
     "network",
@@ -62,8 +63,8 @@
   },
 
   "clock": {
-    "format": "{: %I:%M %p 󰃭 %a %d}",
-    "format-alt": "{:󰥔 %H:%M  %b %Y}",
+    "format": "{:%H\n%M}",
+    "format-alt": "{:%a\n%d\n%b}",
     "tooltip-format": "<tt><big>{calendar}</big></tt>"
   },
 

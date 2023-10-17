@@ -41,7 +41,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background: #f5c2e7;
+  background: #d0ddd6;
   color: #313244;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
@@ -82,7 +82,6 @@ tooltip {
 /* date time block */
 
 #clock {
-  border-radius: 5px;
 }
 
 /* workspace window block */
