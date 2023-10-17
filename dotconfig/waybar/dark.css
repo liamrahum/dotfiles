@@ -29,14 +29,14 @@ tooltip {
   margin-bottom: 3px;
   padding-left: 2px;
   padding-right: 2px;
-  color: #cdd6f4;
+  color: #f1f1f1;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 
 #workspaces button.active {
-  background: #a6adc8;
-  color: #313244;
+  background: #d9ddd6;
+  color: #10130c;
   margin-left: 2px;
   padding-left: 10px;
   padding-right: 10px;
