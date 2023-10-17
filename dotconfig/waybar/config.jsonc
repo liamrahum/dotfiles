@@ -1,21 +1,20 @@
 {
   "layer": "top",
-  "position": "top",
+  "position": "left",
   "mod": "dock",
-  "height": 25,
+
+  "width": 35,
   "exclusive": true,
   "passthrough": false,
   "gtk-layer-shell": true,
-  "modules-left": ["cpu", "memory", "clock"],
-  "modules-center": ["hyprland/workspaces", "hyprland/window"],
+  //"modules-left": ["cpu"],
+  "modules-left": ["hyprland/workspaces"],
   "modules-right": [
-    "custom/updates",
+    "custom/resetclipboard",
     "network",
     "pulseaudio",
     "pulseaudio#microphone",
     "custom/wallchange",
-    "custom/mode",
-    "custom/resetclipboard",
     "tray",
     "custom/power"
   ],
@@ -81,10 +80,10 @@
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "󰤨 {essid}",
-    "format-ethernet": "󱘖 Wired",
-    "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
-    "format-linked": "󱘖 {ifname} (No IP)",
-    "format-disconnected": " Disconnected",
+    "format-ethernet": "󱘖",
+    //"tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+    //"format-linked": "󱘖 {ifname} (No IP)",
+    "format-disconnected": " ",
     "format-alt": "󰤨 {signalStrength}%",
     "interval": 5
   },
@@ -120,8 +119,9 @@
 
   "pulseaudio#microphone": {
     "format": "{format_source}",
-    "format-source": " {volume}%",
+    "format-source": "",
     "format-source-muted": "",
+    "tooltip-format": " Mic Level {volume}%",
     "on-click": "pavucontrol -t 4",
     "on-click-middle": "pamixer --default-source -t",
     "on-scroll-up": "pamixer --default-source -i 5",
@@ -130,20 +130,20 @@
   },
 
   "custom/wallchange": {
-    "format": "󰊠{}",
+    "format": "󰊠",
     "exec": "~/.config/swww/swwwallpaper.sh -t",
     "on-click": "~/.config/swww/swwwallpaper.sh -n",
     "interval": 86400, // once every day
     "tooltip": true
   },
   "custom/resetclipboard": {
-    "format": "{}",
-    "on-click": "~/.config/hypr/scripts/delete-clipboard-history.sh",
-    "tooltip": true
+    "format": "",
+    "tooltip-format": "Delete clipboard history",
+    "on-click": "~/.config/hypr/scripts/delete-clipboard-history.sh"
   },
 
   "custom/mode": {
-    "format": " ",
+    "format": " {}",
     "on-click": "~/.config/hypr/scripts/modeswitch.sh switch",
     "tooltip": true,
     "Interval": 86400
@@ -151,7 +151,7 @@
 
   "tray": {
     "icon-size": 15,
-    "spacing": 5
+    "spacing": 8
   },
 
   "custom/power": {

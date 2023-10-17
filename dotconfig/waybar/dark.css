@@ -27,8 +27,7 @@ tooltip {
   border-radius: 3px;
   margin-top: 3px;
   margin-bottom: 3px;
-  padding-left: 2px;
-  padding-right: 2px;
+
   color: #f1f1f1;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
@@ -37,10 +36,6 @@ tooltip {
 #workspaces button.active {
   background: #d9ddd6;
   color: #10130c;
-  margin-left: 2px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 2px;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
@@ -48,8 +43,6 @@ tooltip {
 #workspaces button:hover {
   background: #f5c2e7;
   color: #313244;
-  padding-left: 2px;
-  padding-right: 2px;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
@@ -79,97 +72,47 @@ tooltip {
 
 #cpu {
   border-radius: 5px 0px 0px 5px;
-  margin-left: 25px;
-  padding-left: 12px;
-  padding-right: 4px;
 }
 
 #memory {
   border-radius: 0px 5px 5px 0px;
   border-left-width: 0px;
-  padding-left: 4px;
-  padding-right: 12px;
-  margin-right: 6px;
 }
 
 /* date time block */
 
 #clock {
   border-radius: 5px;
-  margin-left: 6px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-left: 6px;
 }
 
 /* workspace window block */
 
 #workspaces {
   border-radius: 5px 0px 0px 5px;
-  padding-left: 12px;
 }
 
 #window {
   border-radius: 0px 5px 5px 0px;
-  padding-right: 12px;
 }
 
 /* control center block */
 
 #custom-updates {
   border-radius: 5px 0px 0px 5px;
-  margin-left: 6px;
-  padding-left: 12px;
-  padding-right: 4px;
 }
-
-#network {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#bluetooth {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#pulseaudio {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#pulseaudio.microphone {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
 #custom-wallchange {
   border-radius: 0px 5px 5px 0px;
-  padding-left: 4px;
-  padding-right: 12px;
-  margin-right: 6px;
 }
 
 /* system tray block */
 
 #custom-mode {
   border-radius: 5px 0px 0px 5px;
-  margin-left: 6px;
-  padding-left: 12px;
-  padding-right: 4px;
 }
 
-#tray {
-  padding-left: 4px;
-  padding-right: 4px;
-}
 #custom-resetclipboard {
-  padding-right: 6px;
   font-size: 15px;
 }
 #custom-power {
   border-radius: 0px 5px 5px 0px;
-  padding-left: 4px;
-  padding-right: 12px;
-  margin-right: 25px;
 }
