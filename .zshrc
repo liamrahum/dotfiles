@@ -111,7 +111,9 @@ alias pa='pacman -Ss' # list availabe package
 alias pc='sudo pacman -Sc' # remove unused cache
 alias po='pacman -Qtdq | sudo pacman -Rns -' # remove unused packages, also try > pacman -Qqd | pacman -Rsu --print -
 
-alias dc='cd ~/.config/dwm && nvim config.h && cd -'
+alias cdwm='cd ~/.config/dwm'
+alias dc='cd ~/.config/dwm && nvim config.def.h && cd -'
+alias rorig='rm ~/.config/dwm/config.h'
 alias dbuild='cd ~/.config/dwm && sudo make clean install && cd -'
 
 alias v='nvim'
