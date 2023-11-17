@@ -271,8 +271,8 @@ static int xerrorstart(Display *dpy, XErrorEvent *ee);
 static void zoom(const Arg *arg);
 
 /* variables */
-static const char autostartblocksh[] = "autostart_blocking.sh";
-static const char autostartsh[] = "autostart.sh";
+static const char autostartblocksh[] = "scripts/autostart_blocking.sh";
+static const char autostartsh[] = "scripts/autostart.sh";
 static const char dwmdir[] = "dwm";
 static const char localshare[] = ".local/share";
 static Systray *systray = NULL;
