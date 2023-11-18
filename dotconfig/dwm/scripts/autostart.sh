@@ -1,4 +1,4 @@
 #!/bin/bash
 
-greenclip daemon
+greenclip daemon &
 feh --bg-fill ~/repos/wallpapers/nicola-samori.png
