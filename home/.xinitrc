@@ -1,3 +1,7 @@
+/usr/bin/pipewire &
+/usr/bin/pipewire-pulse &
+/usr/bin/wireplumber &
+
 while true
 	do
     setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_shift_toggle
