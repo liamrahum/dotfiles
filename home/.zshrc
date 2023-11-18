@@ -120,6 +120,7 @@ alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 
+alias reboot='sudo reboot'
 #alias gs='cd ~/Dots/Scripts ; ./git_sync.sh' # sync my git repo
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
