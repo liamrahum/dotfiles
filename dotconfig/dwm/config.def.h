@@ -37,7 +37,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   isfakefullscreen monitor */
     { "Gimp",     NULL,       NULL,       0,            1,           0,               -1 },
     { "Firefox",     NULL,       NULL,       0,            0,           1,               -1 }, 
-    { "Mozilla Firefox",     NULL,       NULL,       0,            0,           1,               -1 },
+    { "Brave",     NULL,       NULL,       0,            0,           1,               -1 },
 };
 #include "movestack.c"
 /* layout(s) */
