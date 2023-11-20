@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias sudo='sudo '
 alias in='sudo pacman -S' # install package
 alias un='sudo pacman -Rns' # uninstall package
 alias up='sudo pacman -Syu' # update system/package/aur
@@ -110,12 +111,15 @@ alias pl='pacman -Qs' # list installed package
 alias pa='pacman -Ss' # list availabe package
 alias pc='sudo pacman -Sc' # remove unused cache
 alias po='pacman -Qtdq | sudo pacman -Rns -' # remove unused packages, also try > pacman -Qqd | pacman -Rsu --print -
+alias yt='ytfzf --detach'
 
+# DWM related
 alias cdwm='cd ~/.config/dwm'
 alias dc='cd ~/.config/dwm && nvim config.def.h && cd -'
 alias rorig='rm ~/.config/dwm/config.h'
 alias dbuild='cd ~/.config/dwm && sudo make clean install && cd -'
 
+#Best text editor
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
