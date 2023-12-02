@@ -70,9 +70,10 @@ static const char *showClipboard[] = {"showclipboard", NULL};
 static const char *screenshot[] = {"flameshot", "gui", NULL};
 static const char *browser[]  = { "brave", NULL };
 static const char *fileExplorer[]  = { "thunar", NULL };
+static const char *rofi[] = {"rofi", "-show", "drun", NULL};
 
 static const Key keys[] = {
-	{ MODKEY,                       XK_space,      spawn,      {.v = dmenucmd } },
+	{ MODKEY,                       XK_space,      spawn,      {.v = rofi } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      spawn,          {.v = browser} },
 	{ MODKEY,                       XK_v,      spawn,          {.v = showClipboard} },
