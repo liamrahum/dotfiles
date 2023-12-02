@@ -1,7 +1,7 @@
 while true
 	do
     setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_shift_toggle
-    xrandr --output DP-4 --mode 2560x1080 --rate 144
+    xrandr --output DP-2 --mode 2560x1080 --rate 144
     while xsetroot -name "$(date "+%a, %b %d %H:%M:%S")"
     do
 	    sleep 1

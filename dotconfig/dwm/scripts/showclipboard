@@ -1,2 +1,2 @@
 #!/bin/bash
-greenclip print | dmenu
+rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
