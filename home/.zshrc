@@ -141,8 +141,7 @@ alias vim='nvim'
 #Display gif
 #kitten icat --align left ~/.config/neofetch/pochita.gif
 
-#if [ -z "$DISPLAY" ] && [ "$(fgconsole)" -eq 1 ]; then
-#    exec startx
-#fi
+if [ -z "$DISPLAY" ] && [ "$(fgconsole)" -eq 1 ]; then
+    exec Hyprland
+fi
 
-if [ -e /home/liam/.nix-profile/etc/profile.d/nix.sh ]; then . /home/liam/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
