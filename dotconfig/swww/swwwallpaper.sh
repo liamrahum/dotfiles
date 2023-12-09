@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env zsh
 
 ## define functions ##
 
@@ -6,7 +6,7 @@
 
 Wall_Next()
 {
-    WallSet=`readlink $BASEDIR/wall.$WALLMODE`
+    WallSet=`readlink ~/.config/swww/wall.$WALLMODE`
     Wallist=(`dirname $WallSet`/*)
 
     for((i=0;i<${#Wallist[@]};i++))

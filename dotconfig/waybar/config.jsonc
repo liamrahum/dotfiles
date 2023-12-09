@@ -33,7 +33,7 @@
     "format": "   {}",
     "separate-outputs": true,
     "rewrite": {
-      "liam@manjaro:(.*)": "$1 ",
+      "liam@debian:(.*)": "$1 ",
       "(.*) — Mozilla Firefox": "$1 󰈹",
       "(.*)Mozilla Firefox": "Firefox 󰈹",
       "(.*) - VSCodium": "$1 󰨞",
@@ -72,8 +72,8 @@
 
   "custom/updates": {
     "format": "󰮯 {}",
-    "exec": "~/.config/waybar/scripts/update-sys.sh",
-    "on-click": "~/.config/waybar/scripts/update-sys.sh update",
+    "exec": "bash ~/.config/waybar/scripts/update-sys.sh",
+    "on-click": "bash ~/.config/waybar/scripts/update-sys.sh update",
     "interval": 86400, // once every day
     "tooltip": true
   },
@@ -132,20 +132,20 @@
 
   "custom/wallchange": {
     "format": "󰊠",
-    "exec": "~/.config/swww/swwwallpaper.sh -t",
-    "on-click": "~/.config/swww/swwwallpaper.sh -n",
+    "exec": "bash ~/.config/swww/swwwallpaper.sh -t",
+    "on-click": "bash ~/.config/swww/swwwallpaper.sh -n",
     "interval": 86400, // once every day
     "tooltip": true
   },
   "custom/resetclipboard": {
     "format": "",
     "tooltip-format": "Delete clipboard history",
-    "on-click": "~/.config/hypr/scripts/delete-clipboard-history.sh"
+    "on-click": "bash ~/.config/hypr/scripts/delete-clipboard-history.sh"
   },
 
   "custom/mode": {
     "format": " {}",
-    "on-click": "~/.config/hypr/scripts/modeswitch.sh switch",
+    "on-click": "bash ~/.config/hypr/scripts/modeswitch.sh switch",
     "tooltip": true,
     "Interval": 86400
   },
