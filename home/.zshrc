@@ -113,6 +113,8 @@ alias pc='sudo pacman -Sc' # remove unused cache
 alias po='pacman -Qtdq | sudo pacman -Rns -' # remove unused packages, also try > pacman -Qqd | pacman -Rsu --print -
 alias yt='ytfzf --detach'
 
+alias neofetch='neofetch --colors 3 3 3 7 1 7'
+
 # DWM related
 alias cdwm='cd ~/.config/dwm'
 alias dc='cd ~/.config/dwm && nvim config.def.h && cd -'
