@@ -12,6 +12,7 @@
   "modules-center": ["clock"],
   "modules-right": [
     "custom/resetclipboard",
+    "custom/keyboardLayout",
     "network",
     "pulseaudio",
     "pulseaudio#microphone",
@@ -134,8 +135,14 @@
     "format": "󰊠",
     "exec": "bash ~/.config/swww/swwwallpaper.sh -t",
     "on-click": "bash ~/.config/swww/swwwallpaper.sh -n",
-    "interval": 86400, // once every day
+    //"interval": 86400, // once every day
     "tooltip": true
+  },
+  "custom/keyboardLayout": {
+    "format": " {}",
+    "return-type": "json",
+    "exec": "~/.config/hypr/scripts/hypr-kbd-layout",
+    "on-click": "hyprctl switchxkblayout logitech-g513-rgb-mechanical-gaming-keyboard next"
   },
   "custom/resetclipboard": {
     "format": "",
