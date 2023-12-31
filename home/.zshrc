@@ -121,6 +121,8 @@ alias dc='cd ~/.config/dwm && nvim config.def.h && cd -'
 alias rorig='rm ~/.config/dwm/config.h'
 alias dbuild='cd ~/.config/dwm && sudo make clean install && cd -'
 
+alias cdc='cd ~/repos/compiler'
+
 #Best text editor
 alias v='nvim'
 alias vi='nvim'
