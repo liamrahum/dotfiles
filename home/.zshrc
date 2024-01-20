@@ -144,7 +144,8 @@ alias vim='nvim'
 
 #Display gif
 #kitten icat --align left ~/.config/neofetch/pochita.gif
-
+export PATH="$PATH:/home/liam/repos/flutter/bin"
+export CHROME_EXECUTABLE="/usr/bin/brave"
 if [ -z "$DISPLAY" ] && [ "$(fgconsole)" -eq 1 ]; then
     exec Hyprland
 fi
