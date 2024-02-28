@@ -125,7 +125,7 @@ alias dbuild='cd ~/.config/dwm && sudo make clean install && cd -'
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
-
+alias musicbot='cd /mnt/4tb/OneDrive/Software/Coding/MusicBot && nohup ./run.sh &'
 #alias reboot='sudo reboot'
 #alias gs='cd ~/Dots/Scripts ; ./git_sync.sh' # sync my git repo
 
