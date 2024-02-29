@@ -79,7 +79,7 @@
     "unsupportedUrls": "bypass"
   },
   "github": {
-    "enabled": true,
+    "enabled": false,
     "frontend": "gothub",
     "redirectType": "main_frame",
     "unsupportedUrls": "bypass"
@@ -262,7 +262,7 @@
     "unsupportedUrls": "bypass"
   },
   "reddit": {
-    "enabled": true,
+    "enabled": false,
     "frontend": "libreddit",
     "instance": "public",
     "redirectType": "main_frame",
@@ -393,6 +393,7 @@
     "redirectType": "main_frame",
     "unsupportedUrls": "bypass"
   },
+  "version": "2.8.1",
   "waybackClassic": [
     "https://wayback-classic.net"
   ],
@@ -434,6 +435,5 @@
     "frontend": "hyperpipe",
     "redirectType": "main_frame",
     "unsupportedUrls": "bypass"
-  },
-  "version": "2.8.1"
+  }
 }
