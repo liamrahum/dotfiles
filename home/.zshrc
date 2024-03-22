@@ -121,6 +121,8 @@ alias dc='cd ~/.config/dwm && nvim config.def.h && cd -'
 alias rorig='rm ~/.config/dwm/config.h'
 alias dbuild='cd ~/.config/dwm && sudo make clean install && cd -'
 
+export PATH="$PATH:/home/liam/repos/flutter/bin"
+
 #Best text editor
 alias v='nvim'
 alias vi='nvim'
@@ -145,5 +147,6 @@ alias musicbot='cd /mnt/4tb/OneDrive/Software/Coding/MusicBot && nohup ./run.sh 
 
 if [ -z "$DISPLAY" ] && [ "$(fgconsole)" -eq 1 ]; then
     exec Hyprland
+    #exec dwl
 fi
 
