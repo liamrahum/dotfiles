@@ -180,4 +180,5 @@ configuration {
 */
 }
 
-@theme "/home/liam/.local/share/rofi/themes/spotlight-dark.rasi"
+@theme "theme.rasi"
+
