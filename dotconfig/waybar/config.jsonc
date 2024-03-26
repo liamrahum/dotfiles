@@ -17,6 +17,7 @@
     "pulseaudio",
     "pulseaudio#microphone",
     "custom/wallchange",
+    "custom/mode",
     "tray",
     "custom/power"
   ],
@@ -34,12 +35,12 @@
     "format": "   {}",
     "separate-outputs": true,
     "rewrite": {
-      "liam@debian:(.*)": "$1 ",
-      "(.*) — Mozilla Firefox": "$1 󰈹",
-      "(.*)Mozilla Firefox": "Firefox 󰈹",
-      "(.*) - VSCodium": "$1 󰨞",
-      "(.*)VSCodium": "Code 󰨞",
-      "(.*) — Dolphin": "$1 󰉋",
+      "liam@archlinux:(.*)": "$1 ",
+      "(.*) — LibreWolf": "$1 󰈹",
+      "(.*)LibreWolf": "Firefox 󰈹",
+      "(.*) - VSCode": "$1 󰨞",
+      "(.*)VSCode": "Code 󰨞",
+      "(.*) — Thunar": "$1 󰉋",
       "(.*)Spotify": "Spotify 󰓇",
       "(.*)Steam": "Steam 󰓓"
     }

@@ -10,14 +10,13 @@ if [ "$X_MODE" == "dark" ] || [ "$X_MODE" == "light" ] ; then
 
 elif [ "$X_MODE" == "switch" ] ; then
     X_MODE=`readlink $CFGDIR/swww/wall.set | awk -F "." '{print $NF}'`
-
     if [ "$X_MODE" == "dark" ] ; then
         S_MODE="light"
-        flatpak --user override --env=GTK_THEME=Catppuccin-Latte
+        flatpak --user override --env=GTK_THEME=Graphite-Light
 
     elif [ "$X_MODE" == "light" ] ; then
         S_MODE="dark"
-        flatpak --user override --env=GTK_THEME=Catppuccin-Mocha-B
+        flatpak --user override --env=GTK_THEME=Graphite-Dark
 
     else
         echo "ERROR: unable to fetch wallpaper mode."
@@ -33,7 +32,7 @@ ln -fs $CFGDIR/hypr/${S_MODE}.conf $CFGDIR/hypr/theme.conf
 
 ### swwwallpaper ###
 x=`echo $S_MODE | cut -c 1`
-$CFGDIR/swww/swwwallpaper.sh -$x
+bash $CFGDIR/swww/swwwallpaper.sh -$x
 
 ### qt5ct ###
 ln -fs $CFGDIR/qt5ct/colors/${S_MODE}.conf $CFGDIR/qt5ct/colors/theme.conf
@@ -42,7 +41,7 @@ ln -fs $CFGDIR/qt5ct/colors/${S_MODE}.conf $CFGDIR/qt5ct/colors/theme.conf
 ln -fs $CFGDIR/rofi/${S_MODE}.rasi $CFGDIR/rofi/theme.rasi
 
 ### kitty ###
-ln -fs $CFGDIR/kitty/${S_MODE}.conf $CFGDIR/kitty/theme.conf
+ln -fs $CFGDIR/kitty/themes/${S_MODE}.conf $CFGDIR/kitty/themes/theme.conf
 killall -SIGUSR1 kitty
 
 ### waybar ###
