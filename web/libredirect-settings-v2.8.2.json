@@ -1,0 +1,472 @@
+{
+  "4get": [
+    "https://4get.ca"
+  ],
+  "anonymousOverflow": [
+    "https://code.whatever.social",
+    "https://overflow.lunar.icu",
+    "https://ao.vern.cc",
+    "https://overflow.smnz.de",
+    "https://overflow.adminforge.de",
+    "https://overflow.projectsegfau.lt",
+    "https://overflow.hostux.net"
+  ],
+  "bandcamp": {
+    "enabled": false,
+    "frontend": "tent",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "biblioReads": [
+    "https://biblioreads.eu.org",
+    "https://biblioreads.vercel.app",
+    "https://biblioreads.lunar.icu",
+    "https://biblioreads.privacyfucking.rocks",
+    "https://read.seitan-ayoub.lol"
+  ],
+  "bilibili": {
+    "enabled": false,
+    "frontend": "mikuInvidious",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "binternet": [
+    "https://binternet.ahwx.org",
+    "https://bn.bloat.cat",
+    "https://binternet.ducks.party",
+    "https://bn.opnxng.com"
+  ],
+  "breezeWiki": [
+    "https://breezewiki.pussthecat.org",
+    "https://bw.hamstro.dev",
+    "https://bw.artemislena.eu",
+    "https://breeze.hostux.net",
+    "https://bw.projectsegfau.lt"
+  ],
+  "cloudtube": [
+    "https://tube.cadence.moe"
+  ],
+  "destructables": [
+    "https://ds.vern.cc"
+  ],
+  "dumb": [
+    "https://dm.vern.cc",
+    "https://dumb.privacydev.net",
+    "https://dumb.lunar.icu",
+    "https://dumb.ducks.party",
+    "https://dumb.privacyfucking.rocks"
+  ],
+  "exceptions": {
+    "regex": [],
+    "url": []
+  },
+  "fandom": {
+    "enabled": true,
+    "frontend": "breezeWiki",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "fetchInstances": "github",
+  "genius": {
+    "enabled": true,
+    "frontend": "dumb",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "github": {
+    "enabled": false,
+    "frontend": "gothub",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "gitlab": {
+    "enabled": false,
+    "frontend": "laboratory",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "goodreads": {
+    "enabled": true,
+    "frontend": "biblioReads",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "gothub": [
+    "https://gothub.frontendfriendly.xyz",
+    "https://gothub.no-logs.com",
+    "https://gh.owo.si",
+    "https://gothub.projectsegfau.lt"
+  ],
+  "hyperpipe": [
+    "https://hyperpipe.surge.sh"
+  ],
+  "imdb": {
+    "enabled": true,
+    "frontend": "libremdb",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "imgur": {
+    "enabled": true,
+    "frontend": "rimgo",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "indestructables": [
+    "https://indestructables.private.coffee"
+  ],
+  "instagram": {
+    "enabled": false,
+    "frontend": "proxigram",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "instructables": {
+    "enabled": false,
+    "frontend": "indestructables",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "intellectual": [
+    "https://intellectual.insprill.net"
+  ],
+  "invidious": [
+    "https://inv.vern.cc"
+  ],
+  "laboratory": [
+    "https://lab.vern.cc"
+  ],
+  "libMedium": [
+    "https://md.vern.cc"
+  ],
+  "libreTranslate": [
+    "https://trans.zillyhuhn.com",
+    "https://libretranslate.com"
+  ],
+  "libreddit": [
+    "https://libreddit.spike.codes",
+    "https://libreddit.lunar.icu",
+    "https://snoo.habedieeh.re",
+    "https://libreddit.tux.pizza"
+  ],
+  "libremdb": [
+    "https://libremdb.iket.me"
+  ],
+  "maps": {
+    "enabled": true,
+    "frontend": "osm",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "medium": {
+    "enabled": true,
+    "frontend": "scribe",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "mikuInvidious": [
+    "https://mikuinv.resrv.org"
+  ],
+  "neuters": [
+    "https://neuters.de"
+  ],
+  "osm": [
+    "https://www.openstreetmap.org"
+  ],
+  "pinterest": {
+    "enabled": true,
+    "frontend": "binternet",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "piped": [
+    "https://piped.lunar.icu",
+    "https://piped.projectsegfau.lt",
+    "https://piped.privacydev.net",
+    "https://piped.smnz.de",
+    "https://piped.adminforge.de",
+    "https://yt.owo.si"
+  ],
+  "pipedMaterial": [
+    "https://piped-material.xn--17b.net"
+  ],
+  "pixiv": {
+    "enabled": false,
+    "frontend": "pixivFe",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "pixivFe": [
+    "https://pixivfe.exozy.me"
+  ],
+  "poketube": [
+    "https://poketube.fun"
+  ],
+  "popupServices": [
+    "youtube",
+    "tiktok",
+    "imgur",
+    "reddit",
+    "quora",
+    "translate",
+    "maps",
+    "search",
+    "genius",
+    "github",
+    "goodreads"
+  ],
+  "proxiTok": [
+    "https://proxitok.pabloferreiro.es",
+    "https://proxitok.privacydev.net",
+    "https://proxitok.pussthecat.org",
+    "https://tok.habedieeh.re",
+    "https://tok.artemislena.eu",
+    "https://tok.adminforge.de"
+  ],
+  "proxigram": [
+    "https://proxigram.privacyfrontends.repl.co"
+  ],
+  "quetre": [
+    "https://quetre.iket.me"
+  ],
+  "quora": {
+    "enabled": true,
+    "frontend": "quetre",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "reddit": {
+    "enabled": false,
+    "frontend": "libreddit",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "reuters": {
+    "enabled": false,
+    "frontend": "neuters",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "rimgo": [
+    "https://rimgo.vern.cc",
+    "https://rimgo.pussthecat.org",
+    "https://imgur.artemislena.eu",
+    "https://rimgo.hostux.net",
+    "https://rimgo.bus-hit.me",
+    "https://rimgo.catsarch.com"
+  ],
+  "ruralDictionary": [
+    "https://rd.vern.cc"
+  ],
+  "safetwitch": [
+    "https://safetwitch.drgns.space",
+    "https://safetwitch.datura.network",
+    "https://safetwitch.projectsegfau.lt",
+    "https://ttv.vern.cc",
+    "https://safetwitch.frontendfriendly.xyz"
+  ],
+  "scribe": [
+    "https://scribe.rip",
+    "https://scribe.nixnet.services",
+    "https://scribe.bus-hit.me",
+    "https://scribe.r4fo.com",
+    "https://sc.vern.cc"
+  ],
+  "search": {
+    "enabled": true,
+    "frontend": "searxng",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "searx": [],
+  "searxng": [
+    "https://darmarit.org/searx",
+    "https://freesearch.club",
+    "https://northboot.xyz",
+    "https://search.gcomm.ch",
+    "https://search.demoniak.ch",
+    "https://search.broker",
+    "https://priv.au",
+    "http://4n53nafyi77iplnbrpmxnp3x4exbswwxigujaxy3b37fvr7bvlopxeyd.onion",
+    "http://privateoz3u5utrimal2edr56j3r5caakektxxgixigdkycuxigvquid.onion",
+    "http://searchpie7fejn4wctzm6fgm6oz5vnziltfzzuec6b4qmkr3wrqaoqqd.onion"
+  ],
+  "simplyTranslate": [
+    "https://simplytranslate.org",
+    "https://tl.vern.cc",
+    "http://tl.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion"
+  ],
+  "snopes": {
+    "enabled": false,
+    "frontend": "suds",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "soundcloud": {
+    "enabled": false,
+    "frontend": "tuboSoundcloud",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "stackOverflow": {
+    "enabled": true,
+    "frontend": "anonymousOverflow",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "suds": [
+    "https://sd.vern.cc"
+  ],
+  "teddit": [
+    "https://teddit.net"
+  ],
+  "tent": [
+    "https://tent.sny.sh"
+  ],
+  "theme": "detect",
+  "tiktok": {
+    "enabled": true,
+    "frontend": "proxiTok",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "translate": {
+    "enabled": true,
+    "frontend": "simplyTranslate",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "tuboSoundcloud": [
+    "https://tubo.migalmoreno.com"
+  ],
+  "tuboYoutube": [
+    "https://tubo.migalmoreno.com"
+  ],
+  "twitch": {
+    "enabled": false,
+    "frontend": "safetwitch",
+    "instance": "public",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "urbanDictionary": {
+    "enabled": false,
+    "frontend": "ruralDictionary",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "version": "2.8.2",
+  "waybackClassic": [
+    "https://wayback-classic.net"
+  ],
+  "waybackMachine": {
+    "enabled": false,
+    "frontend": "waybackClassic",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "whoogle": [],
+  "wikiless": [
+    "https://wikiless.org"
+  ],
+  "wikipedia": {
+    "enabled": false,
+    "frontend": "wikiless",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "wolframAlpha": {
+    "enabled": false,
+    "frontend": "wolfreeAlpha",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "wolfreeAlpha": [
+    "https://gqq.gitlab.io",
+    "https://uqq.gitlab.io"
+  ],
+  "youtube": {
+    "embedFrontend": "invidious",
+    "enabled": true,
+    "frontend": "piped",
+    "redirectType": "both",
+    "unsupportedUrls": "bypass"
+  },
+  "youtubeMusic": {
+    "enabled": false,
+    "frontend": "hyperpipe",
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass"
+  },
+  "viewtube": [
+    "https://viewtube.io"
+  ],
+  "invidiousMusic": [],
+  "bluesky": {
+    "enabled": false,
+    "unsupportedUrls": "bypass",
+    "frontend": "skyview"
+  },
+  "skyview": [
+    "https://skyview.social"
+  ],
+  "redlib": [
+    "https://safereddit.com"
+  ],
+  "tumblr": {
+    "enabled": false,
+    "redirectType": "main_frame",
+    "unsupportedUrls": "bypass",
+    "frontend": "priviblur",
+    "instance": "public"
+  },
+  "priviblur": [
+    "https://pb.bloat.cat"
+  ],
+  "twineo": [
+    "https://twineo.exozy.me"
+  ],
+  "tekstowo": {
+    "enabled": false,
+    "unsupportedUrls": "bypass",
+    "frontend": "tekstoLibre",
+    "redirectType": "main_frame"
+  },
+  "tekstoLibre": [
+    "https://davilarek.github.io/TekstoLibre"
+  ],
+  "librey": [],
+  "mozhi": [
+    "https://mozhi.aryak.me"
+  ],
+  "meet": {
+    "enabled": false,
+    "unsupportedUrls": "bypass",
+    "frontend": "jitsi"
+  },
+  "jitsi": [],
+  "sendFiles": {
+    "enabled": false,
+    "unsupportedUrls": "bypass",
+    "frontend": "send"
+  },
+  "send": [],
+  "textStorage": {
+    "enabled": false,
+    "unsupportedUrls": "bypass",
+    "frontend": "privateBin"
+  },
+  "privateBin": []
+}

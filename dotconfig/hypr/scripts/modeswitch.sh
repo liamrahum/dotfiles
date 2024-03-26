@@ -40,6 +40,9 @@ ln -fs $CFGDIR/qt5ct/colors/${S_MODE}.conf $CFGDIR/qt5ct/colors/theme.conf
 ### rofi ###
 ln -fs $CFGDIR/rofi/${S_MODE}.rasi $CFGDIR/rofi/theme.rasi
 
+### Firefox/Librewolf ###
+ln -fs $CFGDIR/nwg-look/Firefox-Theme-Colors/${S_MODE}.css $CFGDIR/nwg-look/Firefox-Theme-Colors/theme.css
+
 ### kitty ###
 ln -fs $CFGDIR/kitty/themes/${S_MODE}.conf $CFGDIR/kitty/themes/theme.conf
 killall -SIGUSR1 kitty
