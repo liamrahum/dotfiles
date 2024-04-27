@@ -113,7 +113,6 @@ alias pc='sudo pacman -Sc' # remove unused cache
 alias po='pacman -Qtdq | sudo pacman -Rns -' # remove unused packages, also try > pacman -Qqd | pacman -Rsu --print -
 alias yt='ytfzf --detach'
 
-alias neofetch='neofetch --colors 3 3 3 7 1 7'
 
 # DWM related
 alias cdwm='cd ~/.config/dwm'
@@ -128,6 +127,7 @@ alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 alias musicbot='cd /mnt/4tb/OneDrive/Software/Coding/MusicBot && nohup ./run.sh &'
+alias t='tmux'
 #alias reboot='sudo reboot'
 #alias gs='cd ~/Dots/Scripts ; ./git_sync.sh' # sync my git repo
 
@@ -149,4 +149,3 @@ if [ -z "$DISPLAY" ] && [ "$(fgconsole)" -eq 1 ]; then
     exec Hyprland
     #exec dwl
 fi
-
