@@ -146,7 +146,7 @@ alias neofetch='fastfetch'
 #Display gif
 #kitten icat --align left ~/.config/neofetch/pochita.gif
 
-#if [ -z "$DISPLAY" ] && [ "$(fgconsole)" -eq 1 ]; then
-#    exec Hyprland
+if [ -z "$DISPLAY" ] && [ "$(fgconsole)" -eq 1 ]; then
+    exec Hyprland
 #    #exec dwl
-#fi
+fi
