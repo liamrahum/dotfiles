@@ -21,4 +21,4 @@ sudo pacman -S reflector --noconfirm
 sudo reflector --country Israel,Germany -f 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 sudo pacman -Sy
 
-yay -S --noconfirm hyprland hyprshot hyprpicker waybar kitty brave-bin nautilus cliphist neovim swww nwg-look-bin rofi-lbonn-wayland-git wlogout zsh xdg-desktop-portal-gtk xdg-desktop-portal-hyprland tesseract-data-heb tesseract-data-eng tesseract-data-osd tesseract 
+yay -S --noconfirm hyprland hyprshot hyprpicker waybar kitty brave-bin nautilus cliphist neovim swww nwg-look-bin rofi-lbonn-wayland-git wlogout zsh xdg-desktop-portal-gtk xdg-desktop-portal-hyprland tesseract-data-heb tesseract-data-eng tesseract-data-osd tesseract wlsunset swaync pop-icon-theme
