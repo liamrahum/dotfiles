@@ -135,6 +135,7 @@ alias t='tmux'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+export CHROME_EXECUTABLE=/usr/bin/brave
 
 #Display specs
 #neofetch
