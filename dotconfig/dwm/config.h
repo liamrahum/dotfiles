@@ -1,9 +1,12 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
+static const unsigned int refresh_rate = 144;    /* matches dwm's mouse event processing to your monitor's refresh rate for smoother window interactions */
+static const unsigned int enable_noborder = 1;  /* toggles noborder feature (0=disabled, 1=enabled) */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
+static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft = 0;    /* 0: systray in the right corner, >0: systray on left of status text */
 static const unsigned int systrayspacing = 2;   /* systray spacing */
@@ -11,6 +14,9 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+#define ICONSIZE                      17        /* icon size */
+#define ICONSPACING                   5         /* space between icon and title */
+#define SHOWWINICON                   1         /* 0 means no winicon */
 static const int user_bh            = 0;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=12" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=12";
@@ -26,8 +32,17 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_gray4, col_gray2,  col_orange  },
 };
 
+static const char *const autostart[] = {
+	"kitty", NULL,
+	NULL /* terminate */
+};
+
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+
+static const char ptagf[] = "[%s %s]";	/* format of a tag label */
+static const char etagf[] = "[%s]";	/* format of an empty tag */
+static const int lcaselbl = 0;		/* 1 means make tag label lowercase */	
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -35,11 +50,11 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   isfakefullscreen monitor */
-    { "Gimp",     NULL,       NULL,       0,            1,           0,               -1 },
-    { "Firefox",     NULL,       NULL,       0,            0,           1,               -1 }, 
-    { "Brave",     NULL,       NULL,       0,            0,           1,               -1 },
+   { "Gimp",     NULL,       NULL,       0,            1,           0,               -1 },
+    //{ "Firefox",     NULL,       NULL,       0,            0,           1,               -1 }, 
+    //{ "Brave",     NULL,       NULL,       0,            0,           1,               -1 },
 };
-#include "movestack.c"
+//#include "movestack.c"
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
@@ -61,7 +76,10 @@ static const Layout layouts[] = {
 	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
+/* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+
+#define STATUSBAR "dwmblocks"
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
@@ -91,16 +109,17 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-	{ MODKEY,                       XK_f,      togglefullscr,  {0} },
+	{ MODKEY,                       XK_f,      fullscreen,  {0} },
+	{ Mod1Mask,                       XK_f,      togglefakefullscreen,  {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
-	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
+	//{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
+	//{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
+	//{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
 	{ MODKEY|ShiftMask,             XK_p,      quit,           {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
