@@ -153,7 +153,7 @@ bindsym $mod+Shift+c exec xcolor -P 150 -s
 
 bindsym $mod+b exec brave
 
-bindsym $mod+Shift+f exec dolphin
+bindsym $mod+Shift+f exec thunar
 
 
 #keyboard_layout
@@ -165,7 +165,7 @@ exec onedrivegui
 
 # Autostat utils
 exec greenclip daemon
-exec xrandr --output DP-4 --mode 2560x1080 --rate 144
+exec xrandr --output DP-2 --mode 2560x1080 --rate 144
 exec_always --no-startup-id autotiling
 exec ~/.config/polybar/launch.sh
 exec feh --bg-fill ~/repos/wallpapers/nicola-samori.png

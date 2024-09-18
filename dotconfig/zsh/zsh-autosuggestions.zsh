@@ -862,4 +862,3 @@ fi
 
 # Start the autosuggestion widgets on the next precmd
 add-zsh-hook precmd _zsh_autosuggest_start
-
