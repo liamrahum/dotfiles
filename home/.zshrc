@@ -146,7 +146,7 @@ export CHROME_EXECUTABLE=/usr/bin/brave
 
 #Display gif
 #kitten icat --align left ~/.config/neofetch/pochita.gif
-
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 if [ -z "$DISPLAY" ] && [ "$(fgconsole)" -eq 1 ]; then
     exec Hyprland
 #    #exec dwl
